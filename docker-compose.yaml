@@ -1,0 +1,23 @@
+version: "3.4"
+
+services:
+  lunch-apollo-web:
+    build:
+      context: ./webserver/
+    depends_on:
+      - "lunch-apollo-cache"
+    ports:
+      - "8080:8080"
+    environment:
+      - ORDNUNG_USER
+      - ORDNUNG_PASS
+  lunch-apollo-cache:
+    image: redis:6.2.7
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - lunch-apollo:/data
+
+volumes:
+  lunch-apollo:
+    driver: local
