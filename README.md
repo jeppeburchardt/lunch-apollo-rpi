@@ -15,8 +15,6 @@ this is basically the Launch-Apollo of lunch-apollo
 ```
 curl -X POST \
   'http://localhost:8080/msteams' \
-  --header 'Accept: */*' \
-  --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
   --header 'Content-Type: application/json' \
   --data-raw '{
   "text": "Hi Lunch-Apollo"  
@@ -27,8 +25,6 @@ curl -X POST \
 ```
 curl -X POST \
   'http://localhost:8080/msteams' \
-  --header 'Accept: */*' \
-  --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
   --header 'Content-Type: application/json' \
   --data-raw '{
   "text": "Hi Lunch-Apollo 9/7/2022"  
@@ -39,8 +35,6 @@ curl -X POST \
 ```
 curl -X POST \
   'http://localhost:8080/msteams' \
-  --header 'Accept: */*' \
-  --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
   --header 'Content-Type: application/json' \
   --data-raw '{
   "text": "Hi Lunch-Apollo -translate IT"  
